@@ -1,0 +1,10 @@
+@use "../config";
+
+.c-attribution {
+  font-size: config.$font-size-footer-s;
+  text-align: center;
+
+  &__link {
+    color: config.$color-footer-link;
+  }
+}
