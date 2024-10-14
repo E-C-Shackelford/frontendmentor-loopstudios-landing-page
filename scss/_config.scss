@@ -2,21 +2,37 @@ $color-white: hsl(0, 0%, 100%);
 $color-black: hsl(0, 0%, 0%);
 $color-darkgray: hsl(0, 0%, 55%);
 $color-darkergray: hsl(0, 0%, 41%);
+
 $bg-primary: $color-white;
 $bg-secondary: $color-black;
-$text-primary: $color-black;
-$text-secondary: $color-white;
-$color-footer-link: hsl(228, 45%, 44%);
 
-$font-size-body: 1rem;
-$font-size-h1: 2rem;
-$font-size-h2: 1.6rem;
-$font-size-h3: 1.27rem;
-$font-size-link: $font-size-body;
-$font-size-button: 1.13rem;
-$font-size-footer-s: 0.733rem;
+$section-heading-color: $color-black;
 
-$font-stack-body: "Alata", sans-serif;
-$font-stack-heading: "Josefin Sans", sans-serif;
+$body-text-color: $color-darkgray;
+$image-text-color: $color-white;
+$footer-text-color: $color-white;
+$copyright-text-color: $color-darkergray;
+
+$link-color: $color-white;
+$attr-link-color: hsl(228, 60%, 55%);
+$attr-link-interactive-color: hsl(228, 100%, 73%);
+
+$btn-color: $color-black;
+$btn-bg: $color-white;
+$btn-color-interactive: $color-white;
+$btn-bg-interactive: $color-black;
+
+$body-fs: 1rem;
+$h1-fs: 2.5rem;
+$h2-fs: 2rem;
+$h3-fs: 1.5rem;
+$nav-header-fs: 1.2rem;
+$nav-footer-fs: $body-fs;
+$btn-fs: $body-fs;
+$footer-attr-fs: 0.75rem;
+$copyright-fs: 0.866rem;
 
 $font-weight-thin: 300;
+
+$font-family-body: "Alata", sans-serif;
+$font-family-heading: "Josefin Sans", sans-serif;

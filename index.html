@@ -24,57 +24,278 @@
   </head>
 
   <body>
-    <!-- 
-     About Careers Events Products Support Immersive experiences that deliver The
-    leader in interactive VR Founded in 2011, Loopstudios has been producing
-    world-class virtual reality projects for some of the best companies around
-    the globe. Our award-winning creations have transformed businesses through
-    digital experiences that bind to their brand. Our creations See all Deep
-    earth Night arcade Soccer team VR The grid From up above VR Pocket borealis
-    The curiosity Make it fisheye About Careers Events Products Support © 2021
-    Loopstudios. All rights reserved. -->
+    <header class="c-header">
+      <nav
+        class="c-header__nav l-flex-row u-justify-content-between u-align-items-center u-w-85 u-mx-auto u-bg-transparent"
+      >
+        <a
+          class="c-header__logo-link u-link-styles u-link-styles-transparent"
+          href="index.html"
+        >
+          <img
+            class="c-header__logo-link-icon u-logo-w"
+            src="images/logo.svg"
+            alt="Loopstudios logo"
+          />
+        </a>
 
-    <header>
-      <nav class="c-nav">
-        <a href="index.html" class="c-nav__logo-link">loopstudios</a>
-
-        <button class="c-nav__mobile-menu-icon">
-          <div class="c-nav__mobile-menu-icon-bar"></div>
-          <div class="c-nav__mobile-menu-icon-bar"></div>
-          <div class="c-nav__mobile-menu-icon-bar"></div>
+        <button
+          class="c-header__menu-toggle l-flex-row u-justify-content-center u-align-items-center"
+        >
+          <img
+            class="c-header__menu-icon"
+            src="images/icon-hamburger.svg"
+            alt="Mobile menu icon"
+          />
         </button>
-        <ul class="c-nav__list">
-          <li class="c-nav__list-item">
-            <a href="" class="c-nav__link">About</a>
+
+        <ul class="c-header__list">
+          <li class="c-header__item">
+            <a href="#about" class="c-header__link u-link-styles">About</a>
           </li>
-          <li class="c-nav__list-item">
-            <a href="" class="c-nav__link">Careers</a>
+          <li class="c-header__item">
+            <a href="#" class="c-header__link u-link-styles">Careers</a>
           </li>
-          <li class="c-nav__list-item">
-            <a href="" class="c-nav__link">Events</a>
+          <li class="c-header__item">
+            <a href="#" class="c-header__link u-link-styles">Events</a>
           </li>
-          <li class="c-nav__list-item">
-            <a href="" class="c-nav__link">Products</a>
+          <li class="c-header__item">
+            <a href="#creations" class="c-header__link u-link-styles"
+              >Products</a
+            >
           </li>
-          <li class="c-nav__list-item">
-            <a href="" class="c-nav__link">Support</a>
+          <li class="c-header__item">
+            <a href="#" class="c-header__link u-link-styles">Support</a>
           </li>
         </ul>
       </nav>
+
+      <section class="c-header__hero">
+        <h1
+          class="c-header__title u-heading l-flex-col u-align-items-start u-pad-med u-w-90 u-mx-auto"
+        >
+          <span class="c-header__title-word">Immersive</span>
+          <span class="c-header__title-word">Experiences</span>
+          <span class="c-header__title-word">That</span>
+          <span class="c-header__title-word">Deliver</span>
+        </h1>
+      </section>
     </header>
 
-    <main></main>
+    <main class="u-w-90 u-mx-auto">
+      <section
+        id="about"
+        class="c-about l-flex-col u-justify-content-center u-align-items-center u-gap-xl u-mx-auto"
+      >
+        <img
+          class="c-about__image"
+          src="images/mobile/image-interactive.jpg"
+          alt="A man wearing a VR headset"
+        />
+        <div
+          class="c-about__content l-flex-col u-justify-content-center u-align-items-center u-gap-med u-w-85"
+        >
+          <h2 class="c-about__title u-heading-secondary u-text-center">
+            The leader in interactive VR
+          </h2>
+          <p class="c-about__description u-text-center">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
 
-    <footer>
-      <p class="c-attribution">
+      <section
+        id="creations"
+        class="c-creations-gallery l-grid-col-1 u-justify-content-center u-justify-items-center u-gap-lg"
+      >
+        <h2
+          class="c-creations-gallery__title u-heading-secondary u-text-center"
+        >
+          Our Creations
+        </h2>
+
+        <article class="c-creations-gallery__item">
+          <a href="#" class="c-creations-gallery__link">
+            <div class="c-creations-gallery__overlay"></div>
+            <h3 class="c-creations-gallery__item-title l-flex-col">
+              <span class="c-creations-gallery__item-title-word">Deep</span>
+              <span class="c-creations-gallery__item-title-word">Earth</span>
+            </h3>
+          </a>
+        </article>
+
+        <article class="c-creations-gallery__item">
+          <a href="" class="c-creations-gallery__link">
+            <div class="c-creations-gallery__overlay"></div>
+            <h3 class="c-creations-gallery__item-title l-flex-col">
+              <span class="c-creations-gallery__item-title-word">Night</span>
+              <span class="c-creations-gallery__item-title-word">Arcade</span>
+            </h3>
+          </a>
+        </article>
+
+        <article class="c-creations-gallery__item">
+          <a href="" class="c-creations-gallery__link">
+            <div class="c-creations-gallery__overlay"></div>
+            <h3 class="c-creations-gallery__item-title l-flex-col">
+              <span class="c-creations-gallery__item-title-word">Soccer</span>
+              <span class="c-creations-gallery__item-title-word">Team VR</span>
+            </h3>
+          </a>
+        </article>
+
+        <article class="c-creations-gallery__item">
+          <a href="" class="c-creations-gallery__link">
+            <div class="c-creations-gallery__overlay"></div>
+            <h3 class="c-creations-gallery__item-title l-flex-col">
+              <span class="c-creations-gallery__item-title-word">The</span>
+              <span class="c-creations-gallery__item-title-word">Grid</span>
+            </h3>
+          </a>
+        </article>
+
+        <article class="c-creations-gallery__item">
+          <a href="" class="c-creations-gallery__link">
+            <div class="c-creations-gallery__overlay"></div>
+            <h3 class="c-creations-gallery__item-title l-flex-col">
+              <span class="c-creations-gallery__item-title-word">From Up</span>
+              <span class="c-creations-gallery__item-title-word">Above VR</span>
+            </h3>
+          </a>
+        </article>
+
+        <article class="c-creations-gallery__item">
+          <a href="" class="c-creations-gallery__link">
+            <div class="c-creations-gallery__overlay"></div>
+            <h3 class="c-creations-gallery__item-title l-flex-col">
+              <span class="c-creations-gallery__item-title-word">Pocket</span>
+              <span class="c-creations-gallery__item-title-word">Borealis</span>
+            </h3>
+          </a>
+        </article>
+
+        <article class="c-creations-gallery__item">
+          <a href="" class="c-creations-gallery__link">
+            <div class="c-creations-gallery__overlay"></div>
+            <h3 class="c-creations-gallery__item-title l-flex-col">
+              <span class="c-creations-gallery__item-title-word">The</span>
+              <span class="c-creations-gallery__item-title-word"
+                >Curiosity</span
+              >
+            </h3>
+          </a>
+        </article>
+
+        <article class="c-creations-gallery__item">
+          <a href="" class="c-creations-gallery__link">
+            <div class="c-creations-gallery__overlay"></div>
+            <h3 class="c-creations-gallery__item-title l-flex-col">
+              <span class="c-creations-gallery__item-title-word">Make It</span>
+              <span class="c-creations-gallery__item-title-word">Fisheye</span>
+            </h3>
+          </a>
+        </article>
+
+        <button class="c-creations-gallery__btn u-mx-auto">See All</button>
+      </section>
+    </main>
+
+    <footer
+      class="c-footer l-flex-col u-justify-content-center u-align-items-center u-gap-med"
+    >
+      <nav
+        class="c-footer__nav l-flex-col u-justify-content-center u-align-items-center u-gap-lg"
+      >
+        <a
+          class="c-footer__logo-link u-link-styles u-link-styles-transparent"
+          href="index.html"
+        >
+          <img
+            class="c-footer__logo-link-icon u-logo-w"
+            src="images/logo.svg"
+            alt="loopstudios logo"
+          />
+        </a>
+
+        <ul
+          class="c-footer__list l-flex-col u-justify-content-center u-align-items-center u-gap-med"
+        >
+          <li class="c-footer__item">
+            <a class="c-footer__link u-link-styles" href="#about">About</a>
+          </li>
+          <li class="c-footer__item">
+            <a class="c-footer__link u-link-styles" href="#">Careers</a>
+          </li>
+          <li class="c-footer__item">
+            <a class="c-footer__link u-link-styles" href="#">Events</a>
+          </li>
+          <li class="c-footer__item">
+            <a class="c-footer__link u-link-styles" href="#creations"
+              >Products</a
+            >
+          </li>
+          <li class="c-footer__item">
+            <a class="c-footer__link u-link-styles" href="#">Support</a>
+          </li>
+        </ul>
+
+        <ul
+          class="c-footer__social-list l-flex-row u-justify-content-center u-align-items-center u-gap-med-plus"
+        >
+          <li class="c-footer__social-item">
+            <a class="c-footer__social-link u-link-styles" href="#"
+              ><img
+                class="c-footer__social-link-icon"
+                src="images/icon-facebook.svg"
+                alt="Facebook icon"
+            /></a>
+          </li>
+          <li class="c-footer__social-item">
+            <a class="c-footer__social-link u-link-styles" href="#"
+              ><img
+                class="c-footer__social-link-icon"
+                src="images/icon-twitter.svg"
+                alt="Twitter icon"
+            /></a>
+          </li>
+          <li class="c-footer__social-item">
+            <a class="c-footer__social-link u-link-styles" href="#"
+              ><img
+                class="c-footer__social-link-icon"
+                src="images/icon-pinterest.svg"
+                alt="Pinterest icon"
+            /></a>
+          </li>
+          <li class="c-footer__social-item">
+            <a class="c-footer__social-link u-link-styles" href="#"
+              ><img
+                class="c-footer__social-link-icon"
+                src="images/icon-instagram.svg"
+                alt="Instagram icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="c-footer__copyright u-text-center">
+        &copy; 2021 Loopstudios. All rights reserved.
+      </p>
+
+      <p class="c-footer__attribution">
         Challenge by
         <a
-          class="c-attribution__link"
+          class="c-footer__attribution-link"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a class="c-attribution__link" href="#" target="_blank"
+        <a
+          class="c-footer__attribution-link"
+          href="https://www.linkedin.com/in/e-c-shackelford"
+          target="_blank"
           >Elizabeth Shackelford</a
         >.
       </p>

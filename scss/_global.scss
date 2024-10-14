@@ -11,11 +11,13 @@
 html {
   box-sizing: border-box;
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-size: config.$font-size-body;
-  line-height: 1.6;
+  font-family: config.$font-family-body;
+  font-size: config.$body-fs;
+  line-height: 1.7;
   background-color: config.$bg-primary;
 }
 
@@ -23,4 +25,24 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: config.$link-color;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: config.$font-family-heading;
+  font-weight: config.$font-weight-thin;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 1.2px;
 }

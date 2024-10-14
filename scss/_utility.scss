@@ -1,0 +1,113 @@
+@use "config";
+
+.u-justify-items-center {
+  justify-items: center;
+}
+
+.u-justify-content-center {
+  justify-content: center;
+}
+
+.u-justify-content-between {
+  justify-content: space-between;
+}
+
+.u-align-items-center {
+  align-items: center;
+}
+
+.u-align-items-start {
+  align-items: flex-start;
+}
+
+.u-align-items-end {
+  align-items: flex-end;
+}
+
+.u-gap-xs {
+  gap: 5px;
+}
+
+.u-gap-s {
+  gap: 8px;
+}
+
+.u-gap-med {
+  gap: 16px;
+}
+
+.u-gap-med-plus {
+  gap: 20px;
+}
+
+.u-gap-lg {
+  gap: 32px;
+}
+
+.u-gap-xl {
+  gap: 48px;
+}
+
+.u-gap-xxl {
+  gap: 64px;
+}
+
+.u-pad-s {
+  padding: 16px;
+}
+
+.u-pad-med {
+  padding: 24px;
+}
+
+.u-pad-lg {
+  padding: 32px;
+}
+
+.u-pad-xl {
+  padding: 56px;
+}
+
+.u-mx-auto {
+  margin: 0 auto;
+}
+
+.u-w-90 {
+  width: 90%;
+}
+
+.u-w-85 {
+  width: 85%;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-link-styles {
+  display: inline-block;
+  border-block-end: 1px solid transparent;
+  transition: border 0.3s ease-in-out;
+  &:hover,
+  &:focus,
+  &:active {
+    border-block-end: 1px solid config.$color-white;
+  }
+}
+
+.u-link-styles-transparent {
+  @extend .u-link-styles;
+  &:hover,
+  &:focus,
+  &:active {
+    border-block-end: 1px solid transparent;
+  }
+}
+
+.u-heading-secondary {
+  font-size: config.$h2-fs;
+}
+
+.u-logo-w {
+  width: 140px;
+}
