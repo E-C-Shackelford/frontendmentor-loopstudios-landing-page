@@ -66,12 +66,12 @@
     height: 100%;
     background: linear-gradient(
       to right,
-      hsla(0, 0%, 5%, 0.8) 0%,
+      hsla(0, 0%, 5%, 0.5) 0%,
       hsla(0, 0%, 10%, 0.2) 50%,
       hsla(0, 0%, 100%, 0) 100%
     );
     z-index: 1;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
   }
 
   &__item-title {
@@ -81,6 +81,7 @@
     bottom: 16px;
     left: 16px;
     z-index: 2;
+    transition: color 0.3s ease-in-out;
   }
 
   &__item-title-word {
@@ -88,7 +89,11 @@
   }
 
   &__link:hover .c-creations-gallery__overlay {
-    background-color: hsla(0, 0%, 100%, 0.6);
+    background-color: hsla(50, 100%, 100%, 0.6);
+  }
+
+  &__link:hover .c-creations-gallery__item-title {
+    color: config.$image-text-interactive-color;
   }
 
   &__btn {

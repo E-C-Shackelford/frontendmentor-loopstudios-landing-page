@@ -10,11 +10,12 @@
 
   &__link {
     font-size: config.$nav-footer-fs;
+    padding-block-end: 4px;
   }
 
   &__social-link:link,
   &__social-link:visited {
-    padding-bottom: 4px;
+    padding-bottom: 8px;
   }
 
   &__copyright {
