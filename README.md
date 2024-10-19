@@ -25,11 +25,11 @@ This Loopstudios landing page challenge focuses on implementing a responsive lan
 
 - Implementing hover states for all interactive elements on the page.
 
-- Create a functional, accessible menu toggle that toggles between open and closed states, with a sliding navigation list panel for improved usability on mobile screens.
+- Creating a functional, accessible menu toggle that toggles between open and closed states, with a sliding navigation list panel for improved usability on mobile screens.
 
 ### Additional Features
 
-To further test my SCSS and JS skills, I implemented a dynamic nav on scroll, which wasn't part of the original challenge. I added additional JS to change the appearance of the navbar when a user scrolls the page to improve user experience and practice working with JS for scroll-based interactions.
+To further test my SCSS and JS skills, I implemented a dynamic nav that changes on scroll, which wasn't part of the original challenge. I added additional JS to change the appearance of the navbar when a user scrolls the page to improve user experience and practice working with JS for scroll-based interactions.
 
 ### Screenshot
 
