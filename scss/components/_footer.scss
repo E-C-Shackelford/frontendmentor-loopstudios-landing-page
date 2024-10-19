@@ -1,7 +1,7 @@
-@use "../config";
+@use "../variables";
 
 .c-footer {
-  background-color: config.$bg-secondary;
+  background-color: variables.$bg-secondary;
   padding: 40px 16px 32px;
 
   &__list {
@@ -9,7 +9,7 @@
   }
 
   &__link {
-    font-size: config.$nav-footer-fs;
+    font-size: variables.$nav-footer-fs;
     padding-block-end: 4px;
   }
 
@@ -19,20 +19,20 @@
   }
 
   &__copyright {
-    color: config.$color-darkgray;
-    font-size: config.$copyright-fs;
+    color: variables.$color-darkgray;
+    font-size: variables.$copyright-fs;
     letter-spacing: 0.8px;
     margin-block-end: -6px;
   }
 
   &__attribution {
-    font-size: config.$footer-attr-fs;
-    color: config.$color-darkgray;
+    font-size: variables.$footer-attr-fs;
+    color: variables.$color-darkgray;
     text-align: center;
 
     &-link:link,
     &-link:visited {
-      color: config.$attr-link-color;
+      color: variables.$attr-link-color;
       border: 1px solid transparent;
       transition: color 0.2s ease-in-out, border-block-end 0.2s ease-in-out;
     }
@@ -40,8 +40,8 @@
     &-link:hover,
     &-link:focus,
     &-link:active {
-      color: config.$attr-link-interactive-color;
-      border-block-end: 1px solid config.$attr-link-interactive-color;
+      color: variables.$attr-link-interactive-color;
+      border-block-end: 1px solid variables.$attr-link-interactive-color;
     }
   }
 }

@@ -1,4 +1,4 @@
-@use "../config";
+@use "../variables";
 
 .c-about {
   margin-block-end: 96px;
@@ -14,6 +14,6 @@
   }
 
   &__description {
-    color: config.$body-text-color;
+    color: variables.$body-text-color;
   }
 }

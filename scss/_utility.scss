@@ -1,4 +1,4 @@
-@use "config";
+@use "variables";
 
 .u-justify-items-center {
   justify-items: center;
@@ -84,7 +84,7 @@
   text-align: center;
 }
 
-.u-link-styles {
+@mixin u-link-styles($hover-width: 50%) {
   display: inline-block;
   position: relative;
 
@@ -96,37 +96,31 @@
     transform: translateX(-50%);
     width: 0;
     height: 1px;
-    background-color: config.$bg-primary;
+    background-color: variables.$bg-primary;
     transition: width 0.3s ease-in-out;
   }
 
   &:hover::after,
   &:focus::after,
   &:active::after {
-    width: 50%;
+    width: $hover-width;
   }
+}
+
+.u-link-styles {
+  @include u-link-styles();
 }
 
 .u-link-styles-no-end-w {
-  @extend .u-link-styles;
-  &:hover::after,
-  &:focus::after,
-  &:active::after {
-    width: 0;
-  }
+  @include u-link-styles(0);
 }
 
 .u-link-styles-full-end-w {
-  @extend .u-link-styles;
-  &:hover::after,
-  &:focus::after,
-  &:active::after {
-    width: 100%;
-  }
+  @include u-link-styles(100%);
 }
 
 .u-heading-secondary {
-  font-size: config.$h2-fs;
+  font-size: variables.$h2-fs;
 }
 
 .u-logo-w {

@@ -1,4 +1,4 @@
-@use "../config";
+@use "../variables";
 
 .c-creations-gallery {
   &__title {
@@ -75,8 +75,8 @@
   }
 
   &__item-title {
-    color: config.$image-text-color;
-    font-size: config.$h3-fs;
+    color: variables.$image-text-color;
+    font-size: variables.$h3-fs;
     position: absolute;
     bottom: 16px;
     left: 16px;
@@ -93,28 +93,28 @@
   }
 
   &__link:hover .c-creations-gallery__item-title {
-    color: config.$image-text-interactive-color;
+    color: variables.$image-text-interactive-color;
   }
 
   &__btn {
     cursor: pointer;
-    border: 1px solid config.$color-black;
-    background-color: config.$btn-bg;
-    color: config.$btn-color;
+    border: 1px solid variables.$color-black;
+    background-color: variables.$btn-bg;
+    color: variables.$btn-color;
     font-family: inherit;
     text-transform: uppercase;
     letter-spacing: 4px;
     width: max-content;
     padding: 12px 48px;
-    font-size: config.$btn-fs;
+    font-size: variables.$btn-fs;
     margin-block-end: 96px;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
     &:hover,
     &:focus,
     &:active {
-      color: config.$btn-color-interactive;
-      background-color: config.$btn-bg-interactive;
+      color: variables.$btn-color-interactive;
+      background-color: variables.$btn-bg-interactive;
     }
   }
 }

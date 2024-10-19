@@ -1,4 +1,4 @@
-@use "../config";
+@use "../variables";
 @use "../utility";
 
 .c-header {
@@ -19,7 +19,7 @@
     transition: background-color 0.2s ease-in-out, top 0.2s ease-in-out;
 
     &.scrolled {
-      background-color: config.$bg-secondary;
+      background-color: variables.$bg-secondary;
       top: 0;
     }
   }
@@ -60,7 +60,7 @@
   }
 
   &__list {
-    background-color: config.$bg-secondary;
+    background-color: variables.$bg-secondary;
     position: fixed;
     top: 0;
     right: 0;
@@ -77,8 +77,8 @@
   }
 
   &__link {
-    font-size: config.$nav-panel-fs;
-    font-family: config.$font-family-header-link;
+    font-size: variables.$nav-panel-fs;
+    font-family: variables.$font-family-header-link;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 1px;
@@ -89,9 +89,9 @@
   }
 
   &__title {
-    font-size: config.$h1-fs;
-    color: config.$image-text-color;
-    border: 2px solid config.$color-white;
+    font-size: variables.$h1-fs;
+    color: variables.$image-text-color;
+    border: 2px solid variables.$color-white;
     max-width: 350px;
     line-height: 1;
     padding-block-end: 18px;
