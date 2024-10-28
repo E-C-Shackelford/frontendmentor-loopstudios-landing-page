@@ -1,23 +1,5 @@
 @use "variables";
 
-.l-grid-col-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-
-.l-grid-col-2 {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: auto;
-}
-
-.l-grid-col-4 {
-  display: grid;
-  grid-template-columns: 4fr;
-  grid-template-rows: auto;
-}
-
 .l-flex-row {
   display: flex;
   flex-direction: row;

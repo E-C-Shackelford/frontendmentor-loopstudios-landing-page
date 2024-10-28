@@ -1,39 +1,115 @@
 @use "../variables";
+@use "../mixins";
+@use "../layout";
 
 .c-footer {
   background-color: variables.$bg-secondary;
-  padding: 40px 16px 32px;
+
+  &__content {
+    @include mixins.set-width-and-max(90%, 1100px);
+    @include mixins.padding(40px 0);
+    @include mixins.gap();
+
+    @media (min-width: 900px) {
+      @include mixins.grid-layout(repeat(4, 1fr), repeat(3, 1fr) 16px);
+      grid-template-areas:
+        "nav nav nav nav"
+        "nav nav nav nav"
+        ". . copyright copyright"
+        ". . attribution attribution";
+      @include mixins.gap(0);
+      @include mixins.padding(48px 0 0);
+    }
+  }
+
+  &__nav {
+    @include mixins.gap(variables.$gap-xl);
+
+    @media (min-width: 900px) {
+      grid-area: nav;
+      @include mixins.grid-layout(repeat(4, 1fr), 1fr 30px);
+      grid-template-areas:
+        "logo logo social social"
+        "list list . .";
+      @include mixins.gap(variables.$gap-xs);
+    }
+  }
+
+  &__logo-link {
+    @include mixins.set-width-and-max(148px);
+    @include mixins.justify-self();
+
+    @media (min-width: 900px) {
+      grid-area: logo;
+      @include mixins.justify-self(start);
+      @include mixins.align-self(start);
+    }
+  }
 
   &__list {
-    margin-block-end: 16px;
+    @include mixins.block-spacing(16px, null);
+    @include mixins.justify-content();
+    @include mixins.align-items();
+    @include mixins.gap();
+
+    @media (min-width: 900px) {
+      grid-area: list;
+      @include mixins.justify-self(start);
+      flex-direction: row;
+    }
   }
 
   &__link {
     font-size: variables.$nav-footer-fs;
-    padding-block-end: 4px;
+    @include mixins.padding(0 0 4px 0);
+  }
+
+  &__social-list {
+    @include mixins.justify-content();
+    @include mixins.align-items();
+    @include mixins.gap(variables.$gap-med);
+
+    @media (min-width: 900px) {
+      grid-area: social;
+      @include mixins.justify-self(end);
+      @include mixins.align-self(end);
+    }
   }
 
   &__social-link:link,
   &__social-link:visited {
-    padding-bottom: 8px;
+    @include mixins.padding(0 0 8px 0);
   }
 
   &__copyright {
     color: variables.$color-darkgray;
     font-size: variables.$copyright-fs;
-    letter-spacing: 0.8px;
-    margin-block-end: -6px;
+    letter-spacing: variables.$letter-spacing-sm;
+    @include mixins.block-spacing(-6px, null);
+
+    @media (min-width: 900px) {
+      grid-area: copyright;
+      @include mixins.grid-row(2);
+      z-index: variables.$z-index-base;
+      @include mixins.justify-self(end);
+    }
   }
 
   &__attribution {
     font-size: variables.$footer-attr-fs;
     color: variables.$color-darkgray;
-    text-align: center;
+
+    @media (min-width: 900px) {
+      grid-area: attribution;
+      @include mixins.grid-row(3);
+      z-index: variables.$z-index-base;
+      @include mixins.justify-self(end);
+    }
 
     &-link:link,
     &-link:visited {
       color: variables.$attr-link-color;
-      border: 1px solid transparent;
+      @include mixins.border($color: transparent);
       transition: color 0.2s ease-in-out, border-block-end 0.2s ease-in-out;
     }
 

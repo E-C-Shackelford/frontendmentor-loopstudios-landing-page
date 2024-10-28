@@ -1,19 +1,50 @@
 @use "../variables";
+@use "../mixins";
+@use "../layout";
 
 .c-creations-gallery {
+  @include mixins.grid-layout();
+  @include mixins.justify-content();
+  gap: 32px 0;
+  @include mixins.block-spacing(144px, null);
+  @include mixins.set-width-and-max(100%);
+
+  @media (min-width: 768px) {
+    @include mixins.grid-layout(repeat(4, 1fr), 120px 1fr);
+    @include mixins.block-spacing(240px, null);
+  }
+
   &__title {
-    margin-block-end: 16px;
+    @include mixins.grid-column();
+    @include mixins.grid-row();
+    @include mixins.justify-self();
+    @include mixins.align-self();
+
+    @media (min-width: 768px) {
+      @include mixins.grid-column(1, 3);
+      @include mixins.justify-self(start);
+    }
+  }
+
+  &__items {
+    @include mixins.grid-column();
+    @include mixins.grid-layout();
+    @include mixins.gap(variables.$gap-xl);
+    z-index: variables.$z-index-base;
+    @include mixins.set-width-and-max(100%);
+
+    @media (min-width: 768px) {
+      @include mixins.grid-layout(repeat(4, 1fr), repeat(2, 320px));
+      @include mixins.gap(variables.$gap-lg);
+    }
   }
 
   &__item {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 130px;
-    // ensure the articles are fully responsive to the grid's centering logic
-    width: 100%;
-    max-width: 360px;
-    z-index: 1;
+    @include mixins.bg-cover-center-no-repeat;
+    @include mixins.height(130px);
+    z-index: variables.$z-index-base;
+    @include mixins.justify-self();
+    @include mixins.set-width-and-max(100%, 400px);
 
     &:nth-of-type(1) {
       background-image: url("../../images/mobile/image-deep-earth.jpg");
@@ -25,6 +56,10 @@
 
     &:nth-of-type(3) {
       background-image: url("../../images/mobile/image-soccer-team.jpg");
+
+      @media (min-width: 925px) {
+        background-position: top;
+      }
     }
 
     &:nth-of-type(4) {
@@ -41,51 +76,82 @@
 
     &:nth-of-type(7) {
       background-image: url("../../images/mobile/image-curiosity.jpg");
+
+      @media (min-width: 925px) {
+        background-position: top;
+      }
     }
 
     &:nth-of-type(8) {
       background-image: url("../../images/mobile/image-fisheye.jpg");
     }
+
+    @media (min-width: 768px) {
+      @include mixins.height(320px);
+
+      &:nth-of-type(1) {
+        background-image: url("../../images/desktop/image-deep-earth.jpg");
+      }
+
+      &:nth-of-type(2) {
+        background-image: url("../../images/desktop/image-night-arcade.jpg");
+      }
+
+      &:nth-of-type(3) {
+        background-image: url("../../images/desktop/image-soccer-team.jpg");
+      }
+
+      &:nth-of-type(4) {
+        background-image: url("../../images/desktop/image-grid.jpg");
+      }
+
+      &:nth-of-type(5) {
+        background-image: url("../../images/desktop/image-from-above.jpg");
+      }
+
+      &:nth-of-type(6) {
+        background-image: url("../../images/desktop/image-pocket-borealis.jpg");
+      }
+
+      &:nth-of-type(7) {
+        background-image: url("../../images/desktop/image-curiosity.jpg");
+      }
+
+      &:nth-of-type(8) {
+        background-image: url("../../images/desktop/image-fisheye.jpg");
+      }
+    }
   }
 
   &__link {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+    @include mixins.set-width-and-max(100%);
+    @include mixins.height();
+    z-index: variables.$z-index-article-link;
   }
 
   &__overlay {
-    position: absolute;
-    top: 0;
+    @include mixins.set-width-and-max(100%);
+    @include mixins.height();
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(
       to right,
       hsla(0, 0%, 5%, 0.5) 0%,
       hsla(0, 0%, 10%, 0.2) 50%,
       hsla(0, 0%, 100%, 0) 100%
     );
-    z-index: 1;
+    z-index: variables.$z-index-base;
     transition: background-color 0.3s ease-in-out;
   }
 
   &__item-title {
     color: variables.$image-text-color;
     font-size: variables.$h3-fs;
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    z-index: 2;
+    bottom: 24px;
+    left: 24px;
+    z-index: variables.$z-index-base-secondary;
     transition: color 0.3s ease-in-out;
-  }
-
-  &__item-title-word {
-    display: block;
   }
 
   &__link:hover .c-creations-gallery__overlay {
@@ -97,24 +163,32 @@
   }
 
   &__btn {
+    @include mixins.justify-self();
     cursor: pointer;
-    border: 1px solid variables.$color-black;
+    @include mixins.border($width: 2px, $color: variables.$color-darkergray);
+    border-radius: 2px;
     background-color: variables.$btn-bg;
     color: variables.$btn-color;
     font-family: inherit;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    width: max-content;
-    padding: 12px 48px;
+    letter-spacing: variables.$letter-spacing-lg;
+    @include mixins.padding(12px 48px);
     font-size: variables.$btn-fs;
-    margin-block-end: 96px;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      border 0.3s ease-in-out;
 
     &:hover,
     &:focus,
     &:active {
       color: variables.$btn-color-interactive;
       background-color: variables.$btn-bg-interactive;
+      @include mixins.border($width: 2px, $color: variables.$color-black);
+    }
+
+    @media (min-width: 768px) {
+      @include mixins.grid-column(3, 5);
+      @include mixins.grid-row();
+      @include mixins.justify-self(end);
+      @include mixins.align-self();
     }
   }
 }

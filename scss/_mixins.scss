@@ -1,0 +1,106 @@
+@use "variables";
+
+// Layout
+
+@mixin grid-layout($columns: 1fr, $rows: auto) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+// interpolation prevents Sass from misinterpreting arguments as division
+@mixin grid-column($col-start: 1, $col-end: -1) {
+  grid-column: #{$col-start} / #{col-end};
+}
+
+@mixin grid-row($row: 1) {
+  grid-row: $row;
+}
+
+@mixin justify-content($justify-content: center) {
+  justify-content: $justify-content;
+}
+
+@mixin align-items($align-items: center) {
+  align-items: $align-items;
+}
+
+@mixin justify-self($justify-self: center) {
+  justify-self: $justify-self;
+}
+
+@mixin align-self($align-self: center) {
+  align-self: $align-self;
+}
+
+@mixin gap($gap: variables.$gap-sm) {
+  gap: $gap;
+}
+
+// apply width and max-width only if arguments are passed to prevent 'null' output
+@mixin set-width-and-max($width: null, $max-width: null) {
+  @if $width != null {
+    width: $width;
+  }
+  @if $max-width != null {
+    max-width: $max-width;
+  }
+}
+
+@mixin height($height: 100%) {
+  height: $height;
+}
+
+// Utility
+
+@mixin block-spacing($margin-end: null, $padding-start: null) {
+  @if $margin-end != null {
+    margin-block-end: $margin-end;
+  }
+  @if $padding-start != null {
+    padding-block-start: $padding-start;
+  }
+}
+
+@mixin padding($padding: auto) {
+  padding: $padding;
+}
+
+// Styling
+
+@mixin u-link-styles($hover-width: 50%) {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: variables.$bg-primary;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    width: $hover-width;
+  }
+}
+
+@mixin border($width: 1px, $style: solid, $color: variables.$color-white) {
+  @if $width == none or $style == none or $color == none {
+    border: none;
+  } @else {
+    border: $width $style $color;
+  }
+}
+
+@mixin bg-cover-center-no-repeat {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,3 +1,5 @@
+// Color
+
 $color-white: hsl(0, 0%, 100%);
 $color-black: hsl(0, 0%, 0%);
 $color-darkgray: hsl(0, 0%, 55%);
@@ -23,20 +25,64 @@ $btn-bg: $color-white;
 $btn-color-interactive: $color-white;
 $btn-bg-interactive: $color-black;
 
-$body-fs: 1rem;
-$h1-fs: 2.5rem;
-$h2-fs: 2rem;
-$h3-fs: 1.5rem;
-$nav-header-fs: 1.2rem;
-$nav-panel-fs: 1.46rem;
+// Font-size
+
+// 15-18px
+$body-fs: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+// 36-45px
+$h1-fs: clamp(2.4rem, 4vw + 1rem, 3rem);
+// 27-36px
+$h2-fs: clamp(1.8rem, 3vw + 0.8rem, 2.4rem);
+// 21-27px
+$h3-fs: clamp(1.4rem, 2vw + 0.5rem, 1.8rem);
+// 15-18px
+$nav-header-fs: clamp(1rem, 1vw + 0.3rem, 1.2rem);
+// 18-21px
+$nav-panel-fs: clamp(1.2rem, 1.5vw + 0.4rem, 1.4rem);
 $nav-footer-fs: $body-fs;
 $btn-fs: $body-fs;
-$footer-attr-fs: 0.75rem;
-$copyright-fs: 0.866rem;
+// 13.5-15px
+$copyright-fs: clamp(0.9rem, 0.5vw + 0.3rem, 1rem);
+// 11.25-13.5px
+$footer-attr-fs: clamp(0.75rem, 0.4vw + 0.2rem, 0.9rem);
+
+// Font-weight
 
 $font-weight-thin: 300;
+
+// Font-family
 
 $font-family-body: "Alata", sans-serif;
 $font-family-secondary: "Josefin Sans", sans-serif;
 $font-family-heading: $font-family-secondary;
 $font-family-header-link: $font-family-secondary;
+
+// Line-height
+
+$line-height-body: 1.7;
+$line-height-heading: 1.1;
+$line-height-sm: 1;
+
+// Letter-spacing
+
+$letter-spacing-base: 1px;
+$letter-spacing-sm: 0.8px;
+$letter-spacing-med: 1.2px;
+$letter-spacing-lg: 4px;
+
+// Z-index
+
+$z-index-base: 1;
+$z-index-base-secondary: 2;
+$z-index-article-link: 3;
+$z-index-nav-container: 10;
+$z-index-nav-list: 20;
+$z-index-interactive: 25;
+
+// Gap
+
+$gap-xs: 8px;
+$gap-sm: 16px;
+$gap-med: 20px;
+$gap-lg: 24px;
+$gap-xl: 32px;

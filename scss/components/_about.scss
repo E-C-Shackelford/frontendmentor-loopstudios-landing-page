@@ -1,19 +1,68 @@
 @use "../variables";
+@use "../mixins";
+@use "../layout";
 
 .c-about {
-  margin-block-end: 96px;
+  @include mixins.grid-layout();
+  @include mixins.block-spacing(96px, null);
+
+  @media (min-width: 768px) {
+    @include mixins.grid-layout(repeat(2, 1fr));
+    @include mixins.block-spacing(192px, null);
+  }
 
   &__image {
-    width: 95%;
-    max-width: 400px;
+    @include mixins.grid-column();
+    @include mixins.justify-self();
+    @include mixins.grid-row();
+    @include mixins.set-width-and-max($max-width: 400px);
+
+    @media (min-width: 768px) {
+      @include mixins.grid-column(1, 2);
+      @include mixins.justify-self(start);
+      @include mixins.grid-row();
+      @include mixins.set-width-and-max($max-width: 500px);
+    }
   }
 
   &__content {
-    width: 85%;
-    max-width: 350px;
+    @include mixins.grid-column();
+    @include mixins.justify-self();
+    @include mixins.padding(48px 0);
+    @include mixins.set-width-and-max($max-width: 400px);
+
+    @media (min-width: 768px) {
+      @include mixins.grid-column(1, 3);
+      @include mixins.justify-self(stretch);
+      @include mixins.grid-row();
+      @include mixins.set-width-and-max($max-width: unset);
+      z-index: variables.$z-index-base-secondary;
+      background-color: variables.$bg-primary;
+      @include mixins.padding(56px 0 0 56px);
+      top: 30%;
+      left: 40%;
+      right: 0;
+    }
+
+    @media (min-width: 850px) {
+      @include mixins.padding(56px 32px 0 56px);
+    }
+  }
+
+  &__title {
+    @include mixins.block-spacing(16px, null);
   }
 
   &__description {
     color: variables.$body-text-color;
+    @include mixins.padding(0 16px);
+
+    @media (min-width: 370px) {
+      @include mixins.padding(0 24px);
+    }
+
+    @media (min-width: 768px) {
+      @include mixins.padding(0);
+    }
   }
 }

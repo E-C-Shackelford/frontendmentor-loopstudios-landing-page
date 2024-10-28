@@ -24,97 +24,117 @@
   </head>
 
   <body>
-    <header class="c-header">
+    <header class="c-header u-position-rel">
       <div
         id="nav-container"
-        class="c-header__nav-container l-flex-row u-justify-content-between u-align-items-center"
+        class="c-header__nav-container u-position-fix u-top-zero"
       >
-        <nav
-          id="nav"
-          class="c-header__nav l-flex-row u-justify-content-between u-align-items-center"
-        >
-          <a
-            class="c-header__logo-link u-link-styles-no-end-w"
-            href="index.html"
+        <div class="c-header__nav-container--inner l-flex-row u-mx-auto">
+          <nav id="nav" class="c-header__nav l-flex-row u-position-rel">
+            <a
+              class="c-header__logo-link u-link-styles-no-end-w"
+              href="index.html"
+            >
+              <img
+                class="c-header__logo-link-icon"
+                src="images/logo.svg"
+                alt="Loopstudios logo"
+              />
+            </a>
+
+            <ul
+              id="sliding-panel"
+              class="c-header__list l-flex-col u-position-fix u-position-stat-lg u-top-zero"
+            >
+              <li class="c-header__item">
+                <a
+                  href="#about"
+                  class="c-header__link u-link-styles u-position-rel u-text-uppercase u-text-capitalize-lg"
+                  >About</a
+                >
+              </li>
+              <li class="c-header__item">
+                <a
+                  href="#"
+                  class="c-header__link u-link-styles u-position-rel u-text-uppercase u-text-capitalize-lg"
+                  >Careers</a
+                >
+              </li>
+              <li class="c-header__item">
+                <a
+                  href="#"
+                  class="c-header__link u-link-styles u-position-rel u-text-uppercase u-text-capitalize-lg"
+                  >Events</a
+                >
+              </li>
+              <li class="c-header__item">
+                <a
+                  href="#creations"
+                  class="c-header__link u-link-styles u-position-rel u-text-uppercase u-text-capitalize-lg"
+                  >Products</a
+                >
+              </li>
+              <li class="c-header__item">
+                <a
+                  href="#"
+                  class="c-header__link u-link-styles u-position-rel u-text-uppercase u-text-capitalize-lg"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            id="menu-toggle"
+            class="c-header__menu-toggle active l-flex-row u-d-none-lg"
           >
             <img
-              class="c-header__logo-link-icon u-logo-w"
-              src="images/logo.svg"
-              alt="Loopstudios logo"
+              class="c-header__menu-icon u-menu-toggle-icons-dimensions"
+              src="images/icon-hamburger.svg"
+              alt="Mobile menu icon"
             />
-          </a>
 
-          <ul
-            id="sliding-panel"
-            class="c-header__list l-flex-col u-justify-content-start u-align-items-start u-gap-med u-pad-med"
-          >
-            <li class="c-header__item">
-              <a href="#about" class="c-header__link u-link-styles">About</a>
-            </li>
-            <li class="c-header__item">
-              <a href="#" class="c-header__link u-link-styles">Careers</a>
-            </li>
-            <li class="c-header__item">
-              <a href="#" class="c-header__link u-link-styles">Events</a>
-            </li>
-            <li class="c-header__item">
-              <a href="#creations" class="c-header__link u-link-styles"
-                >Products</a
-              >
-            </li>
-            <li class="c-header__item">
-              <a href="#" class="c-header__link u-link-styles">Support</a>
-            </li>
-          </ul>
-        </nav>
-
-        <button
-          id="menu-toggle"
-          class="c-header__menu-toggle active l-flex-row u-justify-content-center u-align-items-center"
-        >
-          <img
-            class="c-header__menu-icon u-menu-toggle-icons-dimensions"
-            src="images/icon-hamburger.svg"
-            alt="Mobile menu icon"
-          />
-
-          <img
-            class="c-header__menu-close u-menu-toggle-icons-dimensions"
-            src="images/icon-close.svg"
-            alt="Mobile close icon"
-          />
-        </button>
+            <img
+              class="c-header__menu-close u-menu-toggle-icons-dimensions u-d-none"
+              src="images/icon-close.svg"
+              alt="Mobile close icon"
+            />
+          </button>
+        </div>
       </div>
 
-      <section class="c-header__hero">
-        <h1
-          class="c-header__title u-heading l-flex-col u-align-items-start u-pad-med u-w-90 u-mx-auto"
-        >
-          <span class="c-header__title-word">Immersive</span>
-          <span class="c-header__title-word">Experiences</span>
-          <span class="c-header__title-word">That</span>
-          <span class="c-header__title-word">Deliver</span>
+      <section class="c-header__hero u-mx-auto u-center">
+        <h1 class="c-header__title u-heading l-flex-col">
+          <span class="c-header__title-word u-d-block">Immersive</span>
+          <span class="c-header__title-word u-d-block">Experiences</span>
+          <span class="c-header__title-word u-d-block">That</span>
+          <span class="c-header__title-word u-d-block">Deliver</span>
         </h1>
       </section>
     </header>
 
-    <main class="u-w-90 u-mx-auto">
-      <section
-        id="about"
-        class="c-about l-flex-col u-justify-content-center u-align-items-center u-gap-xl u-mx-auto"
-      >
-        <img
-          class="c-about__image"
-          src="images/mobile/image-interactive.jpg"
-          alt="A man wearing a VR headset"
-        />
-        <div
-          class="c-about__content l-flex-col u-justify-content-center u-align-items-center u-gap-med"
-        >
-          <h2 class="c-about__title u-heading-secondary u-text-center">
+    <main class="u-mx-auto">
+      <section id="about" class="c-about u-position-rel">
+        <picture>
+          <source
+            srcset="images/desktop/image-interactive.jpg"
+            media="(min-width: 768px)"
+          />
+
+          <img
+            class="c-about__image u-mx-auto"
+            src="images/mobile/image-interactive.jpg"
+            alt="A man wearing a VR headset"
+          />
+        </picture>
+
+        <div class="c-about__content u-position-abs-lg">
+          <h2
+            class="c-about__title u-heading-secondary u-text-center u-text-left-lg"
+          >
             The leader in interactive VR
           </h2>
-          <p class="c-about__description u-text-center">
+          <p class="c-about__description u-text-center u-text-left-lg">
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
@@ -125,193 +145,275 @@
 
       <section
         id="creations"
-        class="c-creations-gallery l-grid-col-1 u-justify-content-center u-justify-items-center u-gap-lg"
+        class="c-creations-gallery u-justify-items-center u-mx-auto"
       >
-        <h2
-          class="c-creations-gallery__title u-heading-secondary u-text-center"
-        >
+        <h2 class="c-creations-gallery__title u-heading-secondary">
           Our Creations
         </h2>
 
-        <article class="c-creations-gallery__item">
-          <a href="#" class="c-creations-gallery__link">
-            <div class="c-creations-gallery__overlay"></div>
-            <h3 class="c-creations-gallery__item-title l-flex-col">
-              <span class="c-creations-gallery__item-title-word">Deep</span>
-              <span class="c-creations-gallery__item-title-word">Earth</span>
-            </h3>
-          </a>
-        </article>
-
-        <article class="c-creations-gallery__item">
-          <a href="" class="c-creations-gallery__link">
-            <div class="c-creations-gallery__overlay"></div>
-            <h3 class="c-creations-gallery__item-title l-flex-col">
-              <span class="c-creations-gallery__item-title-word">Night</span>
-              <span class="c-creations-gallery__item-title-word">Arcade</span>
-            </h3>
-          </a>
-        </article>
-
-        <article class="c-creations-gallery__item">
-          <a href="" class="c-creations-gallery__link">
-            <div class="c-creations-gallery__overlay"></div>
-            <h3 class="c-creations-gallery__item-title l-flex-col">
-              <span class="c-creations-gallery__item-title-word">Soccer</span>
-              <span class="c-creations-gallery__item-title-word">Team VR</span>
-            </h3>
-          </a>
-        </article>
-
-        <article class="c-creations-gallery__item">
-          <a href="" class="c-creations-gallery__link">
-            <div class="c-creations-gallery__overlay"></div>
-            <h3 class="c-creations-gallery__item-title l-flex-col">
-              <span class="c-creations-gallery__item-title-word">The</span>
-              <span class="c-creations-gallery__item-title-word">Grid</span>
-            </h3>
-          </a>
-        </article>
-
-        <article class="c-creations-gallery__item">
-          <a href="" class="c-creations-gallery__link">
-            <div class="c-creations-gallery__overlay"></div>
-            <h3 class="c-creations-gallery__item-title l-flex-col">
-              <span class="c-creations-gallery__item-title-word">From Up</span>
-              <span class="c-creations-gallery__item-title-word">Above VR</span>
-            </h3>
-          </a>
-        </article>
-
-        <article class="c-creations-gallery__item">
-          <a href="" class="c-creations-gallery__link">
-            <div class="c-creations-gallery__overlay"></div>
-            <h3 class="c-creations-gallery__item-title l-flex-col">
-              <span class="c-creations-gallery__item-title-word">Pocket</span>
-              <span class="c-creations-gallery__item-title-word">Borealis</span>
-            </h3>
-          </a>
-        </article>
-
-        <article class="c-creations-gallery__item">
-          <a href="" class="c-creations-gallery__link">
-            <div class="c-creations-gallery__overlay"></div>
-            <h3 class="c-creations-gallery__item-title l-flex-col">
-              <span class="c-creations-gallery__item-title-word">The</span>
-              <span class="c-creations-gallery__item-title-word"
-                >Curiosity</span
+        <div class="c-creations-gallery__items">
+          <article class="c-creations-gallery__item u-position-rel">
+            <a
+              href="#"
+              class="c-creations-gallery__link u-d-block u-position-rel"
+            >
+              <div
+                class="c-creations-gallery__overlay u-position-abs u-top-zero"
+              ></div>
+              <h3
+                class="c-creations-gallery__item-title u-position-abs l-flex-col"
               >
-            </h3>
-          </a>
-        </article>
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Deep</span
+                >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Earth</span
+                >
+              </h3>
+            </a>
+          </article>
 
-        <article class="c-creations-gallery__item">
-          <a href="" class="c-creations-gallery__link">
-            <div class="c-creations-gallery__overlay"></div>
-            <h3 class="c-creations-gallery__item-title l-flex-col">
-              <span class="c-creations-gallery__item-title-word">Make It</span>
-              <span class="c-creations-gallery__item-title-word">Fisheye</span>
-            </h3>
-          </a>
-        </article>
+          <article class="c-creations-gallery__item u-position-rel">
+            <a
+              href="#"
+              class="c-creations-gallery__link u-d-block u-position-rel"
+            >
+              <div
+                class="c-creations-gallery__overlay u-position-abs u-top-zero"
+              ></div>
+              <h3
+                class="c-creations-gallery__item-title u-position-abs l-flex-col"
+              >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Night</span
+                >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Arcade</span
+                >
+              </h3>
+            </a>
+          </article>
 
-        <button class="c-creations-gallery__btn u-mx-auto">See All</button>
+          <article class="c-creations-gallery__item u-position-rel">
+            <a
+              href="#"
+              class="c-creations-gallery__link u-d-block u-position-rel"
+            >
+              <div
+                class="c-creations-gallery__overlay u-position-abs u-top-zero"
+              ></div>
+              <h3
+                class="c-creations-gallery__item-title u-position-abs l-flex-col"
+              >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Soccer</span
+                >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Team VR</span
+                >
+              </h3>
+            </a>
+          </article>
+
+          <article class="c-creations-gallery__item u-position-rel">
+            <a
+              href="#"
+              class="c-creations-gallery__link u-d-block u-position-rel"
+            >
+              <div
+                class="c-creations-gallery__overlay u-position-abs u-top-zero"
+              ></div>
+              <h3
+                class="c-creations-gallery__item-title u-position-abs l-flex-col"
+              >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >The</span
+                >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Grid</span
+                >
+              </h3>
+            </a>
+          </article>
+
+          <article class="c-creations-gallery__item u-position-rel">
+            <a
+              href="#"
+              class="c-creations-gallery__link u-d-block u-position-rel"
+            >
+              <div
+                class="c-creations-gallery__overlay u-position-abs u-top-zero"
+              ></div>
+              <h3
+                class="c-creations-gallery__item-title u-position-abs l-flex-col"
+              >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >From Up</span
+                >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Above VR</span
+                >
+              </h3>
+            </a>
+          </article>
+
+          <article class="c-creations-gallery__item u-position-rel">
+            <a
+              href="#"
+              class="c-creations-gallery__link u-d-block u-position-rel"
+            >
+              <div
+                class="c-creations-gallery__overlay u-position-abs u-top-zero"
+              ></div>
+              <h3
+                class="c-creations-gallery__item-title u-position-abs l-flex-col"
+              >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Pocket</span
+                >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Borealis</span
+                >
+              </h3>
+            </a>
+          </article>
+
+          <article class="c-creations-gallery__item u-position-rel">
+            <a
+              href="#"
+              class="c-creations-gallery__link u-d-block u-position-rel"
+            >
+              <div
+                class="c-creations-gallery__overlay u-position-abs u-top-zero"
+              ></div>
+              <h3
+                class="c-creations-gallery__item-title u-position-abs l-flex-col"
+              >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >The</span
+                >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Curiosity</span
+                >
+              </h3>
+            </a>
+          </article>
+
+          <article class="c-creations-gallery__item u-position-rel">
+            <a
+              href="#"
+              class="c-creations-gallery__link u-d-block u-position-rel"
+            >
+              <div
+                class="c-creations-gallery__overlay u-position-abs u-top-zero"
+              ></div>
+              <h3
+                class="c-creations-gallery__item-title u-position-abs l-flex-col"
+              >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Make It</span
+                >
+                <span class="c-creations-gallery__item-title-word u-d-block"
+                  >Fisheye</span
+                >
+              </h3>
+            </a>
+          </article>
+        </div>
+
+        <button class="c-creations-gallery__btn u-text-uppercase">
+          See All
+        </button>
       </section>
     </main>
 
-    <footer
-      class="c-footer l-flex-col u-justify-content-center u-align-items-center u-gap-med"
-    >
-      <nav
-        class="c-footer__nav l-flex-col u-justify-content-center u-align-items-center u-gap-lg"
-      >
-        <a class="c-footer__logo-link u-link-styles-no-end-w" href="index.html">
-          <img
-            class="c-footer__logo-link-icon u-logo-w"
-            src="images/logo.svg"
-            alt="loopstudios logo"
-          />
-        </a>
+    <footer class="c-footer">
+      <div class="c-footer__content u-mx-auto u-center">
+        <nav class="c-footer__nav u-center">
+          <a class="c-footer__logo-link u-link-styles-no-end-w" href="#">
+            <img
+              class="c-footer__logo-link-icon"
+              src="images/logo.svg"
+              alt="loopstudios logo"
+            />
+          </a>
 
-        <ul
-          class="c-footer__list l-flex-col u-justify-content-center u-align-items-center u-gap-med"
-        >
-          <li class="c-footer__item">
-            <a class="c-footer__link u-link-styles" href="#about">About</a>
-          </li>
-          <li class="c-footer__item">
-            <a class="c-footer__link u-link-styles" href="#">Careers</a>
-          </li>
-          <li class="c-footer__item">
-            <a class="c-footer__link u-link-styles" href="#">Events</a>
-          </li>
-          <li class="c-footer__item">
-            <a class="c-footer__link u-link-styles" href="#creations"
-              >Products</a
-            >
-          </li>
-          <li class="c-footer__item">
-            <a class="c-footer__link u-link-styles" href="#">Support</a>
-          </li>
-        </ul>
+          <ul class="c-footer__list l-flex-col">
+            <li class="c-footer__item">
+              <a class="c-footer__link u-link-styles" href="#about">About</a>
+            </li>
+            <li class="c-footer__item">
+              <a class="c-footer__link u-link-styles" href="#">Careers</a>
+            </li>
+            <li class="c-footer__item">
+              <a class="c-footer__link u-link-styles" href="#">Events</a>
+            </li>
+            <li class="c-footer__item">
+              <a class="c-footer__link u-link-styles" href="#creations"
+                >Products</a
+              >
+            </li>
+            <li class="c-footer__item">
+              <a class="c-footer__link u-link-styles" href="#">Support</a>
+            </li>
+          </ul>
 
-        <ul
-          class="c-footer__social-list l-flex-row u-justify-content-center u-align-items-center u-gap-med-plus"
-        >
-          <li class="c-footer__social-item">
-            <a class="c-footer__social-link u-link-styles-full-end-w" href="#"
-              ><img
-                class="c-footer__social-link-icon"
-                src="images/icon-facebook.svg"
-                alt="Facebook icon"
-            /></a>
-          </li>
-          <li class="c-footer__social-item">
-            <a class="c-footer__social-link u-link-styles-full-end-w" href="#"
-              ><img
-                class="c-footer__social-link-icon"
-                src="images/icon-twitter.svg"
-                alt="Twitter icon"
-            /></a>
-          </li>
-          <li class="c-footer__social-item">
-            <a class="c-footer__social-link u-link-styles-full-end-w" href="#"
-              ><img
-                class="c-footer__social-link-icon"
-                src="images/icon-pinterest.svg"
-                alt="Pinterest icon"
-            /></a>
-          </li>
-          <li class="c-footer__social-item">
-            <a class="c-footer__social-link u-link-styles-full-end-w" href="#"
-              ><img
-                class="c-footer__social-link-icon"
-                src="images/icon-instagram.svg"
-                alt="Instagram icon"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="c-footer__social-list l-flex-row">
+            <li class="c-footer__social-item">
+              <a class="c-footer__social-link u-link-styles-full-end-w" href="#"
+                ><img
+                  class="c-footer__social-link-icon"
+                  src="images/icon-facebook.svg"
+                  alt="Facebook icon"
+              /></a>
+            </li>
+            <li class="c-footer__social-item">
+              <a class="c-footer__social-link u-link-styles-full-end-w" href="#"
+                ><img
+                  class="c-footer__social-link-icon"
+                  src="images/icon-twitter.svg"
+                  alt="Twitter icon"
+              /></a>
+            </li>
+            <li class="c-footer__social-item">
+              <a class="c-footer__social-link u-link-styles-full-end-w" href="#"
+                ><img
+                  class="c-footer__social-link-icon"
+                  src="images/icon-pinterest.svg"
+                  alt="Pinterest icon"
+              /></a>
+            </li>
+            <li class="c-footer__social-item">
+              <a class="c-footer__social-link u-link-styles-full-end-w" href="#"
+                ><img
+                  class="c-footer__social-link-icon"
+                  src="images/icon-instagram.svg"
+                  alt="Instagram icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
 
-      <p class="c-footer__copyright u-text-center">
-        &copy; 2021 Loopstudios. All rights reserved.
-      </p>
+        <p class="c-footer__copyright u-text-center">
+          &copy; 2021 Loopstudios. All rights reserved.
+        </p>
 
-      <p class="c-footer__attribution">
-        Challenge by
-        <a
-          class="c-footer__attribution-link"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          class="c-footer__attribution-link"
-          href="https://www.linkedin.com/in/e-c-shackelford"
-          target="_blank"
-          >Elizabeth Shackelford</a
-        >.
-      </p>
+        <p class="c-footer__attribution u-text-center">
+          Challenge by
+          <a
+            class="c-footer__attribution-link"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            class="c-footer__attribution-link"
+            href="https://www.linkedin.com/in/e-c-shackelford"
+            target="_blank"
+            >Elizabeth Shackelford</a
+          >.
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
