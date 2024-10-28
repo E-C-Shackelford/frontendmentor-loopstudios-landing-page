@@ -45,6 +45,7 @@
     z-index: variables.$z-index-base;
     @include mixins.justify-self();
     @include mixins.set-width-and-max(100%, 400px);
+    background-color: variables.$bg-fallback;
 
     &:nth-of-type(1) {
       background-image: url("../images/mobile/image-deep-earth.jpg");
