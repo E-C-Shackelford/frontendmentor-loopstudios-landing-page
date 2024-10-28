@@ -4,8 +4,10 @@
 @use "../utility";
 
 .c-header {
-  background-image: url("../../images/mobile/image-hero.jpg");
+  background-color: variables.$bg-fallback;
+  background-image: url("../images/mobile/image-hero.jpg");
   @include mixins.bg-cover-center-no-repeat;
+  @include mixins.set-width-and-max(100%);
   @include mixins.height(90vh);
   @include mixins.block-spacing(120px, 240px);
 
@@ -14,7 +16,7 @@
         hsla(0, 0%, 0%, 0.4),
         hsla(0, 0%, 0%, 0.4)
       ),
-      url("../../images/desktop/image-hero.jpg");
+      url("../images/desktop/image-hero.jpg");
     @include mixins.height(450px);
     @include mixins.block-spacing(220px, 160px);
   }
