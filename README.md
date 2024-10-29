@@ -5,14 +5,16 @@ This is my solution to the [Loopstudios landing page challenge on Frontend Mento
 ## Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [The Challenge](#the-challenge)
+  - [Additional Features](#additional-features)
+  - [Screenshots](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Tech Stack](#tech-stack)
+  - [Key Development Steps](#key-development-steps)
+  - [Key Takeaways](#key-takeaways)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -33,15 +35,18 @@ To further test my Sass/SCSS and JS skills, I implemented a dynamic nav that cha
 
 ### Screenshots
 
-![Screenshot of mobile view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-mobile.png)
+- **Mobile View**:
+  ![Screenshot of mobile view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-mobile.png)
 
-![Screenshot of tablet view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-tablet.png)
+- **Tablet View**:
+  ![Screenshot of tablet view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-tablet.png)
 
-![Screenshot of desktop view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-desktop.png)
+- **Desktop View**:
+  ![Screenshot of desktop view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-desktop.png)
 
 ### Links
 
-- **Solution URL**: [Solution: GitHub Repository]()
+- **Solution URL**: [Solution: GitHub Repository](https://github.com/E-C-Shackelford/frontendmentor-loopstudios-landing-page)
 - **Live Site URL**: [Live Site: Deployed Application]()
 
 ## My Process
@@ -70,7 +75,7 @@ To further test my Sass/SCSS and JS skills, I implemented a dynamic nav that cha
 
 - **Nesting and Inheritance**: I used nesting to create clearer, hierarchical styling, and inheritance to reduce redundancy and maintain consistency.
 
-- **Interactivity with JS**: I enhanced user interaction by implementing a responsive menu toggle, sliding navigation panel, and a scroll-triggered navigation effect.
+- **Interactivity with JS**: I enhanced user interaction by implementing a responsive menu toggle, sliding navigation panel, and scroll-triggered navigation effect.
 
 - **Expanding Challenge with JS**: I added a scroll-triggered background change on the navigation to further develop my JS skills and improve user experience, ensuring easy access to the navigation from any place on the page.
 
@@ -92,7 +97,7 @@ I'm excited to build more projects and advance my skills in Sass/SCSS and JS. As
 
 - [**Sass Official Documentation**](https://sass-lang.com)
 
-- ["CSS Preprocessors" section of the **Advanced CSS Techniques** learning path in the **Learning Path** section of **Frontend Mentor**](https://www.frontendmentor.io/learning-paths/advanced-css-techniques-vdOtKjIC4V/steps/66e85fc05832c087f2edf44f/article/read)
+- ["CSS Preprocessors" section of the **Advanced CSS Techniques** learning path in the **Learning Path** section of **Frontend Mentor**](https://www.frontendmentor.io)
 
 ## Author
 
