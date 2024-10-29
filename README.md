@@ -2,7 +2,7 @@
 
 This is my solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). These challenges help improve coding skills by building realistic, front-end projects.
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -17,40 +17,84 @@ This is my solution to the [Loopstudios landing page challenge on Frontend Mento
 
 ## Overview
 
-### The challenge
+### The Challenge
 
-This Loopstudios landing page challenge focuses on implementing a responsive landing page using HTML, CSS, and JS. The key objectives include:
+This Loopstudios landing page challenge focuses on implementing a responsive landing page using HTML, Sass/SCSS, and JS. The key objectives include:
 
 - Providing an optimal layout across different screen sizes.
 
 - Implementing hover states for all interactive elements on the page.
 
-- Creating a functional, accessible menu toggle that toggles between open and closed states, with a sliding navigation list panel for improved usability on mobile screens.
+- Creating a functional, accessible menu toggle that toggles between open and closed states, with a sliding navigation panel for improved usability on mobile screens.
 
 ### Additional Features
 
-To further test my SCSS and JS skills, I implemented a dynamic nav that changes on scroll, which wasn't part of the original challenge. I added additional JS to change the appearance of the navbar when a user scrolls the page to improve user experience and practice working with JS for scroll-based interactions.
+To further test my Sass/SCSS and JS skills, I implemented a dynamic nav that changes on scroll, which wasn't part of the original challenge. I added additional JS to change the appearance of the navbar when a user scrolls the page to improve user experience and practice working with JS for scroll-based interactions.
 
-### Screenshot
+### Screenshots
+
+![Screenshot of mobile view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-mobile.png)
+
+![Screenshot of tablet view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-tablet.png)
+
+![Screenshot of desktop view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-desktop.png)
 
 ### Links
 
-## My process
+- **Solution URL**: [Solution: GitHub Repository]()
+- **Live Site URL**: [Live Site: Deployed Application]()
 
-### Built with
+## My Process
 
-- HTML5 – I structured my content with semantic elements, ensuring code clarity, readability, accessibility, and maintainability.
+### Tech Stack
 
-- BEM Methodology with Namespaces – I broke my page into Blocks, Elements, and Modifiers and utilized namespaces to distinguish components, utilities, and layout elements and create a modular, transparent, reusable, and scalable CSS architecture.
+- **HTML5**: I structured my content with semantic elements, establishing code clarity, readability, accessibility, and maintainability.
 
-- Sass (SCSS syntax) – I used the SCSS syntax and incorporated partials and imports, variables, nesting, and parameterized mixins to create more modular, organized, flexible, scalable, maintainable, and dynamic stylesheets, while focusing on DRY coding practices.
+- **BEM Methodology with Namespaces**: I broke my page into Blocks, Elements, and Modifiers and utilized namespaces to distinguish components, utilities, and layout elements and create a modular, transparent, reusable, and scalable CSS architecture.
 
-- Mobile-first design – I focused on the core content, and prioritized optimal performance and usability on mobile devices before scaling up to larger screens in order to provide a consistent and seamless user experience across all devices.
+- **Sass (SCSS syntax)**: I used the SCSS syntax and incorporated partials and imports, variables, nesting, and parameterized mixins to create more modular, organized, flexible, scalable, maintainable, and dynamic stylesheets, while focusing on DRY coding practices.
 
-### What I learned
+- **Mobile-First Design**: I focused on the core content, and prioritized optimal performance and usability on mobile devices before scaling up to larger screens in order to provide a consistent and seamless user experience across all devices.
 
-### Continued development
+### Key Development Steps
 
-### Useful resources
+- **HTML5 Structure**: I began the project with a semantic HTML foundation.
+
+- **Mobile-First Development**: I utilized a mobile-first approach to develop a sacalable and fluid layout that adapts seamlessly across all devices.
+
+- **Media Queries**: I applied responsive breakpoints in order for the layout to adapt seamlessly across tablet and desktop views, improving usability on various screen sizes.
+
+- **SCSS File Organization**: I structured my code with purposeful partials to improve organization, readability, and maintainability.
+
+- **Variables and Mixins**: I used variables for design consistency and parameterized mixins to centralize styling logic, making my code more reusable and maintainable.
+
+- **Nesting and Inheritance**: I used nesting to create clearer, hierarchical styling, and inheritance to reduce redundancy and maintain consistency.
+
+- **Interactivity with JS**: I enhanced user interaction by implementing a responsive menu toggle, sliding navigation panel, and a scroll-triggered navigation effect.
+
+- **Expanding Challenge with JS**: I added a scroll-triggered background change on the navigation to further develop my JS skills and improve user experience, ensuring easy access to the navigation from any place on the page.
+
+- **Testing and Iteration**: I conducted cross-browser testing for consistency, used developer tools to ensure responsive design across different screen sizes, and repeatedly reviewed and refined my code for improved clarity, and compressed image files for faster load times.
+
+### Key Takeaways
+
+- **SCSS Syntax and Organization**: I learned how parameterized mixins, variables, and nesting create clean, consistent, and maintainable code, and organized partials enhance project structure and improve readability.
+
+- **Flexible Layouts with CSS Grid**: I explored how CSS Grid creates flexible, complex layouts, including effective management of overlapping elements.
+
+- **JS for Enhanced Interactivity**: I implemented JS functionality for a responsive menu toggle and sliding navigation panel, along with an additional challenge of creating a scroll-triggered background change for the nav, improving user experience.
+
+### Continued Development
+
+I'm excited to build more projects and advance my skills in Sass/SCSS and JS. As I continue my journey in SCSS, I want to explore SCSS best practices, theming and dynamic color schemes, control directives and loops, creating functions, advanced media queries, color manipulation, and CSS animations and transitions in SCSS.
+
+### Useful Resources
+
+- [**Sass Official Documentation**](https://sass-lang.com)
+
+- ["CSS Preprocessors" section of the **Advanced CSS Techniques** learning path in the **Learning Path** section of **Frontend Mentor**](https://www.frontendmentor.io/learning-paths/advanced-css-techniques-vdOtKjIC4V/steps/66e85fc05832c087f2edf44f/article/read)
 
 ## Author
+
+- LinkedIn - [Elizabeth Shackelford](https://www.linkedin.com/in/e-c-shackelford)
+- Frontend Mentor - [@E-C-Shackelford](https://www.frontendmentor.io/profile/E-C-Shackelford)
