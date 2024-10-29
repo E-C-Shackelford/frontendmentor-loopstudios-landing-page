@@ -36,12 +36,15 @@ To further test my Sass/SCSS and JS skills, I implemented a dynamic nav that cha
 ### Screenshots
 
 - **Mobile View**:
+
   ![Screenshot of mobile view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-mobile.png)
 
 - **Tablet View**:
+
   ![Screenshot of tablet view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-tablet.png)
 
 - **Desktop View**:
+
   ![Screenshot of desktop view for Loopstudios landing page solution](images/screenshot-loopstudios-solution-desktop.png)
 
 ### Links
