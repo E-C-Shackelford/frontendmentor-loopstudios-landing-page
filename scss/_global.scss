@@ -35,6 +35,12 @@ a:visited {
   color: variables.$link-color;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid hsl(42, 100%, 50%);
+  outline-offset: 3px;
+}
+
 li {
   list-style: none;
 }
