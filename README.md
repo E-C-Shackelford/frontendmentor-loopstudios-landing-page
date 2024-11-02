@@ -64,7 +64,7 @@ To further test my Sass/SCSS and JS skills, I implemented a dynamic nav that cha
 
 - **Mobile-First Design**: I focused on the core content, and prioritized optimal performance and usability on mobile devices before scaling up to larger screens in order to provide a consistent and seamless user experience across all devices.
 
-- **JavaScript**: I created a responsive menu toggle that controls a sliding nav panel on mobile devices and added a scroll-triggered navigation effect on all screen sizes to further improve the user experience.
+- **JavaScript**: I created a responsive menu toggle for a sliding nav panel on mobile devices and added a scroll-triggered navigation effect across all screen sizes to further improve the user experience.
 
 ### Key Development Steps
 
