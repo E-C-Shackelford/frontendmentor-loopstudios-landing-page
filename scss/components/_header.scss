@@ -21,6 +21,10 @@
     @include mixins.block-spacing(220px, 160px);
   }
 
+  @media (min-width: 1024px) {
+    @include mixins.height(550px);
+  }
+
   &__nav-container {
     @include mixins.set-width-and-max(100%);
     @include mixins.padding(32px 0);
